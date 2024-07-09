@@ -8,5 +8,21 @@ namespace Message.PresentationLayer.Controllers
         {
             return View();
         }
+        public IActionResult GelenKutusu()
+        {
+            return View();
+        }
+        public IActionResult GidenKutusu()
+        {
+            return View();
+        }
+        public IActionResult Onemli()
+        {
+            return View();
+        }
+        public IActionResult CopKutusu()
+        {
+            return View();
+        }
     }
 }
