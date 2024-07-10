@@ -5,8 +5,6 @@
 
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en-US" dir="ltr">
-
-  
 <!-- Mirrored from prium.github.io/falcon/v3.20.0/pages/user/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Apr 2024 22:43:02 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
@@ -101,15 +99,24 @@
                                <a class="nav-link" href="/Message/MessageList/" role="button">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-comments"></span></span><span class="nav-link-text ps-1">Tüm Mesajlar</span></div>
                                 </a> <!--  parent pages-->
-                  
-                  
-                  <a class="nav-link dropdown-indicator" href="#email" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="email">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Message/YeniMesaj/">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-pencil-alt me-2"></i> <!-- Yeni Mesaj Oluştur ikonu -->
+                                        <span class="nav-link-text ps-1">Yeni Mesaj Oluştur</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <a class="nav-link dropdown-indicator" href="#email" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="email">
                     <div class="d-flex align-items-center">
                         <span class="nav-link-icon"><span class="fas fa-envelope-open"></span></span>
-                        <span class="nav-link-text ps-1">Mesaj İşlemleri</span></div>
+                        <span class="nav-link-text ps-1">Mesaj İşlemleri</span>
+                    </div>
                   </a>
-
-
+                          
+                            <li>
                                 <ul class="nav collapse" id="email">
                                     <li class="nav-item">
                                         <a class="nav-link" href="/Message/GelenKutusu/">
@@ -144,11 +151,7 @@
                                         </a>
                                     </li>
                                 </ul>
-
                 </li>
-             
-  
-               
               </ul>
              
             </div>

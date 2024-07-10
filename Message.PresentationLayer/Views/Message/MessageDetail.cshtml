@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewData["Title"] = "MessageDetail";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+<br />
+<br />
+<div class="card mb-3">
+    <div class="card-body d-flex justify-content-between">
+        <div><a class="btn btn-falcon-default btn-sm" href="/Message/GelenKutusu/" data-bs-toggle="tooltip" data-bs-placement="top" title="Gelen Kutusuna geri Dön"><span class="fas fa-arrow-left"></span></a><span class="mx-1 mx-sm-2 text-300">|</span>
+           
+            <button class="btn btn-falcon-default btn-sm ms-1 ms-sm-2" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Sil"><span class="fas fa-trash-alt"></span>
+            </button><button class="btn btn-falcon-default btn-sm ms-1 ms-sm-2" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Mark as unread"><span class="fas fa-envelope"></span></button>
+          </div>
+        <div class="d-flex">
+            <div class="d-none d-md-block"><small>2 of 354</small><button class="btn btn-falcon-default btn-sm ms-2" type="button"><span class="fas fa-chevron-left"></span></button><button class="btn btn-falcon-default btn-sm ms-2" type="button"><span class="fas fa-chevron-right"></span></button></div>
+            <div class="dropdown font-sans-serif">
+                <button class="btn btn-falcon-default text-600 btn-sm dropdown-toggle dropdown-caret-none ms-2" type="button" id="email-settings" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false"><span class="fas fa-cog"></span></button>
+                <div class="dropdown-menu dropdown-menu-end border py-2" aria-labelledby="email-settings">
+                    <a class="dropdown-item" href="#!">Configure inbox</a>
+                    <div class="dropdown-divider"></div><a class="dropdown-item" href="#!">Settings</a><a class="dropdown-item" href="#!">Themes</a>
+                    <div class="dropdown-divider"></div><a class="dropdown-item" href="#!">Send feedback</a><a class="dropdown-item" href="#!">Help</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-md d-flex">
+                <div class="avatar avatar-2xl">
+                    <img class="rounded-circle" src="/falconAdminPanel/falcon/v3.20.0/assets/img/team/1.jpg" alt="" /><!--Gönderen resmi-->
+                </div>
+                <div class="flex-1 ms-2">
+                    <h5 class="mb-0">Women work wonders… on your <span class="white-space-nowrap">marketing skills</span></h5><!--Konu başlığı-->
+                    <a class="text-800 fs-10" href="#!"><span class="fw-semi-bold">Emma Watson</span><!--Gönderen İsmi-->
+                        <span class="ms-1 text-500">&lt;emma@watson.com&gt;</span></a><!--Gönderen Mail-->
+                </div>
+            </div>
+            <div class="col-md-auto ms-auto d-flex align-items-center ps-6 ps-md-3"><small>8:40 AM (9 hours ago)</small><!--Gönderim saaati-->
+                <span class="fas fa-star text-warning fs-10 ms-2"></span></div>
+        </div>
+    </div>
+    <div class="card-body bg-body-tertiary">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xxl-6">
+                <div class="card shadow-none mb-3">
+                    <img class="card-img-top" src="/falconAdminPanel/falcon/v3.20.0/assets/img/icons/spot-illustrations/international-women-s-day-2.png" alt="" /><!--Mesaj resmi-->
+                    <div class="card-body">
+                        <h3 class="fw-semi-bold">Happy International Women’s Day!</h3>
+                        <p>Buraya Mesaj description Gelecek.</p>
+
+                        <div class="text-center">
+                            <a href="/Message/YeniMesaj/">
+                                <button class="btn btn-success btn-lg my-3" type="button">Cevapla</button>
+                            </a>
+                        </div>
+                         
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="icon-group justify-content-center"><a class="icon-item text-facebook" href="#!"><span class="fab fa-facebook-f"></span></a><a class="icon-item text-twitter" href="#!"><span class="fab fa-twitter"></span></a><a class="icon-item text-google-plus" href="#!"><span class="fab fa-google-plus-g"></span></a><a class="icon-item text-linkedin" href="#!"><span class="fab fa-linkedin-in"></span></a><a class="icon-item text-700" href="#!"><span class="fab fa-medium-m"></span></a></div><small>If you wish to unsubscribe from all future emails, please click <a href="#!">here</a>.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer">
+        <div class="row justify-content-between">
+            <div class="col"><a class="btn btn-falcon-default btn-sm" href="compose.html"><span class="fas fa-reply" data-fa-transform="down-2"></span><span class="d-none d-sm-inline-block ms-1">Reply</span></a><a class="btn btn-falcon-default btn-sm ms-2" href="compose.html"><span class="fas fa-location-arrow" data-fa-transform="down-2"></span><span class="d-none d-sm-inline-block ms-1">Forward</span></a></div>
+            <div class="col-auto d-flex align-items-center"><small>2 of 354</small><button class="btn btn-falcon-default btn-sm ms-2" type="button"><span class="fas fa-chevron-left"></span></button><button class="btn btn-falcon-default btn-sm ms-2" type="button"><span class="fas fa-chevron-right"></span></button></div>
+        </div>
+    </div>
+</div>
+

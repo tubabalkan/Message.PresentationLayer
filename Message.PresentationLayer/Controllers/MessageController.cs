@@ -8,6 +8,10 @@ namespace Message.PresentationLayer.Controllers
         {
             return View();
         }
+        public IActionResult MessageDetail()
+        {
+            return View();
+        }
         public IActionResult GelenKutusu()
         {
             return View();
@@ -21,6 +25,10 @@ namespace Message.PresentationLayer.Controllers
             return View();
         }
         public IActionResult CopKutusu()
+        {
+            return View();
+        }
+        public IActionResult YeniMesaj()
         {
             return View();
         }
