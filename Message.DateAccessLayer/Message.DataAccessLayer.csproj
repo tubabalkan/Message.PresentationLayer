@@ -8,15 +8,18 @@
 
   <ItemGroup>
     <Folder Include="Abstract\" />
-    <Folder Include="Concrete\" />
-    <Folder Include="Container\" />
-    <Folder Include="ErrorMessage\" />
-    <Folder Include="ValidationRules\" />
+    <Folder Include="EntityFramework\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.1.31" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.32" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Message.BusinessLayer\Message.BusinessLayer.csproj" />
+    <ProjectReference Include="..\Message.EntityLayer\Message.EntityLayer.csproj" />
   </ItemGroup>
 
 </Project>

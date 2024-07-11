@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Message.EntityLayer.Concrete
 {
-    public class Message
+    public class MessageBox
     {
-        public int MessageId { get; set; }
+        public int MessageBoxId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Mail { get; set; }

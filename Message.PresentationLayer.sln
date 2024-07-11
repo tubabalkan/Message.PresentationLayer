@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.PresentationLayer", "Message.PresentationLayer\Message.PresentationLayer.csproj", "{DE49258B-F5B7-4456-B5F4-7431D8B6BB45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Message.PresentationLayer", "Message.PresentationLayer\Message.PresentationLayer.csproj", "{DE49258B-F5B7-4456-B5F4-7431D8B6BB45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.EntityLayer", "Message.EntityLayer\Message.EntityLayer.csproj", "{0D8630CC-8C64-4F02-B179-787755E36E7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Message.EntityLayer", "Message.EntityLayer\Message.EntityLayer.csproj", "{0D8630CC-8C64-4F02-B179-787755E36E7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.DateAccessLayer", "Message.DateAccessLayer\Message.DateAccessLayer.csproj", "{3BD1D1C0-B55F-49D8-B42D-D89A96CC48A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Message.DataAccessLayer", "Message.DateAccessLayer\Message.DataAccessLayer.csproj", "{3BD1D1C0-B55F-49D8-B42D-D89A96CC48A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.BusinessLayer", "Message.BusinessLayer\Message.BusinessLayer.csproj", "{931159C1-C410-42CB-B2D0-04DB4EB99363}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Message.BusinessLayer", "Message.BusinessLayer\Message.BusinessLayer.csproj", "{931159C1-C410-42CB-B2D0-04DB4EB99363}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
