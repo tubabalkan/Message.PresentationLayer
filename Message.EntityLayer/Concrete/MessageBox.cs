@@ -11,6 +11,8 @@ namespace Message.EntityLayer.Concrete
         public int MessageBoxId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
+        public string Alıcı { get; set; }
+        public string Gonderen { get; set; }
         public string Mail { get; set; }
         public string ImageUrl { get; set; }
         public string Subject { get; set; }

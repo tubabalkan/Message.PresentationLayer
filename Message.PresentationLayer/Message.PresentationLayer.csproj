@@ -18,8 +18,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Message.BusinessLayer\Message.BusinessLayer.csproj" />
-    <ProjectReference Include="..\Message.DateAccessLayer\Message.DataAccessLayer.csproj" />
-    <ProjectReference Include="..\Message.EntityLayer\Message.EntityLayer.csproj" />
   </ItemGroup>
 
 </Project>
