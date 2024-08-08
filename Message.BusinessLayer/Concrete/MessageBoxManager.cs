@@ -12,6 +12,12 @@ namespace Message.BusinessLayer.Concrete
     public class MessageBoxManager : IMessageBoxService
     {
         private readonly IMessageBoxDal _messageBoxDal;
+
+        public MessageBoxManager(IMessageBoxDal messageBoxDal)
+        {
+            _messageBoxDal = messageBoxDal;
+        }
+
         public void TDelete(int id)
         {
             _messageBoxDal.Delete(id);

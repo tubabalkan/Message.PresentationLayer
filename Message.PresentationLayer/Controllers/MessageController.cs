@@ -1,12 +1,21 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Message.BusinessLayer.Abstract;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Message.PresentationLayer.Controllers
 {
     public class MessageController : Controller
     {
+        private readonly IMessageBoxService _MessageBoxService;
+
+        public MessageController(IMessageBoxService messageBoxService)
+        {
+            _MessageBoxService = messageBoxService;
+        }
+
         public IActionResult MessageList()
         {
-            return View();
+            var messages = _MessageBoxService.TGetListAll();
+            return View(messages);
         }
         public IActionResult MessageDetail()
         {

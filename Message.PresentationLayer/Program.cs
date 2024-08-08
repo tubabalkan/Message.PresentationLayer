@@ -1,8 +1,14 @@
+using Message.BusinessLayer.Abstract;
+using Message.BusinessLayer.Concrete;
+using Message.DataAccessLayer.Abstract;
+using Message.DataAccessLayer.EntityFramework;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddScoped<IMessageBoxService, MessageBoxManager>();
+builder.Services.AddScoped<IMessageBoxDal, EfMessageBoxDal>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
