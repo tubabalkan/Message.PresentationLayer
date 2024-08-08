@@ -1,4 +1,4 @@
-﻿
+﻿@model Message.EntityLayer.Concrete.MessageBox
 @{
     ViewData["Title"] = "MessageDetail";
     Layout = "~/Views/AdminLayout/Index.cshtml";
@@ -30,12 +30,14 @@
         <div class="row">
             <div class="col-md d-flex">
                 <div class="avatar avatar-2xl">
-                    <img class="rounded-circle" src="/falconAdminPanel/falcon/v3.20.0/assets/img/team/1.jpg" alt="" /><!--Gönderen resmi-->
+                    <img class="rounded-circle" src="@Html.DisplayFor(x=>x.ImageUrl)" alt="" /><!--Gönderen resmi-->
                 </div>
                 <div class="flex-1 ms-2">
-                    <h5 class="mb-0">Women work wonders… on your <span class="white-space-nowrap">marketing skills</span></h5><!--Konu başlığı-->
-                    <a class="text-800 fs-10" href="#!"><span class="fw-semi-bold">Emma Watson</span><!--Gönderen İsmi-->
-                        <span class="ms-1 text-500">&lt;emma@watson.com&gt;</span></a><!--Gönderen Mail-->
+                    <h5 class="mb-0">Women work wonders… on your <span class="white-space-nowrap">@Html.DisplayFor(x=>x.Subject)</span></h5><!--Konu başlığı-->
+                    <a class="text-800 fs-10" href="#!">
+                        <span class="fw-semi-bold">@Html.DisplayFor(x=>x.Name)</span><!--Gönderen İsmi-->
+                        <span class="ms-1 text-500">@Html.DisplayFor(x=>x.Mail)</span>
+                    </a><!--Gönderen Mail-->
                 </div>
             </div>
             <div class="col-md-auto ms-auto d-flex align-items-center ps-6 ps-md-3"><small>8:40 AM (9 hours ago)</small><!--Gönderim saaati-->

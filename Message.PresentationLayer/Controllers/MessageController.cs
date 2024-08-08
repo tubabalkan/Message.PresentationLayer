@@ -17,9 +17,10 @@ namespace Message.PresentationLayer.Controllers
             var messages = _MessageBoxService.TGetListAll();
             return View(messages);
         }
-        public IActionResult MessageDetail()
+        public IActionResult MessageDetail(int id)
         {
-            return View();
+            var message = _MessageBoxService.TGetById(id);
+            return View(message);
         }
         public IActionResult GelenKutusu()
         {
